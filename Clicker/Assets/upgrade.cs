@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class upgrade : MonoBehaviour
+public class addlvl_wood : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int level_wood;
+    public Text wood_lvlText;
+    
+    public void upgrade_wood()
     {
-        
+        level_wood += 1; 
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        wood_lvlText.text = level_wood.ToString();
     }
 }
