@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class StaInt : MonoBehaviour
 {
-    public static int WoodValue;
+  
 }
