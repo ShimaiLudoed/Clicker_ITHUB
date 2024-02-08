@@ -11,5 +11,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(Wood_location);
     }
-        
+    public void RockTp(string Rock_location)
+    {
+        SceneManager.LoadScene(Rock_location);
+    }
+
 }

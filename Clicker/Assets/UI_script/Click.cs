@@ -6,36 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class Click : MonoBehaviour
 {
-    public int wood;
+    
     public static int WoodValue;
-    public Text woodText;
-
+    public Text WoodValueText;
     public void addwood()
     {
-        wood += 1;
+        WoodValue += 1;
         PlayerPrefs.SetInt("WoodValue", WoodValue);
     }
-
-    void FixedUpdate()
+    public static int RockValue;
+    public Text RockValueText;
+    public void addrock()
     {
-        woodText.text = wood.ToString();
-
-    }
-}
-public class Res : MonoBehaviour
-{
-    public int wd;
-    public Text wdText;
-
-    public void addwd()
-    {
-       
-        wd = PlayerPrefs.GetInt("WoodValue");
+        RockValue += 1;
+        PlayerPrefs.SetInt("RockValue", RockValue);
     }
 
     void FixedUpdate()
     {
-        wdText.text = wd.ToString();
-    }
+        WoodValueText.text = WoodValue.ToString(); 
+        RockValueText.text = RockValue.ToString();
+    } 
 }
+
 

@@ -537,8 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fda13d6db19b9da429eef182a6006d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wood: 0
-  woodText: {fileID: 1982348658}
+  WoodValueText: {fileID: 1982348658}
 --- !u!1 &283580113
 GameObject:
   m_ObjectHideFlags: 0
