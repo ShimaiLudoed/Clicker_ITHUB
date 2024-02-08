@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 982d7f0bf56690e44b1706e42bf5e485
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Start_location.unity
     guid: f2a83e52dd1b6fb41841db942e7a6a28
+  - enabled: 1
+    path: Assets/Scenes/Rock_location.unity
+    guid: 40ade9c043275ee40b1797d7f810055e
+  - enabled: 1
+    path: Assets/Scenes/Wood_location.unity
+    guid: 3e406eadf97271e4eaba7efb47d3024a
   m_configObjects: {}

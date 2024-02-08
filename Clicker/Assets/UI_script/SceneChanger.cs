@@ -3,9 +3,13 @@ using UnityEngine;
 
 public class SceneChanger : MonoBehaviour
 {
-  public void PlayGame(string Game)
+  public void PlayGame(string Start_location)
     {
-        SceneManager.LoadScene(Game);
+        SceneManager.LoadScene(Start_location);
+    }
+    public void WoodTp(string Wood_location)
+    {
+        SceneManager.LoadScene(Wood_location);
     }
         
 }
