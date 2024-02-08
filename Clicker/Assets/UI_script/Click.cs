@@ -7,27 +7,35 @@ using UnityEngine.SceneManagement;
 public class Click : MonoBehaviour
 {
     public int wood;
-    public static int wd2;
+    public static int WoodValue;
     public Text woodText;
-    public Text wd2Text;
- 
-    public void addwood()
-    {        
-        wood += 1;
 
-    }
-    
-    public void Change()
+    public void addwood()
     {
-        wd2 += wood;
+        wood += 1;
+        PlayerPrefs.SetInt("WoodValue", WoodValue);
     }
-    
-  
+
     void FixedUpdate()
     {
-
         woodText.text = wood.ToString();
-        wd2Text.text = wd2.ToString();
-        
+
     }
 }
+public class Res : MonoBehaviour
+{
+    public int wd;
+    public Text wdText;
+
+    public void addwd()
+    {
+       
+        wd = PlayerPrefs.GetInt("WoodValue");
+    }
+
+    void FixedUpdate()
+    {
+        wdText.text = wd.ToString();
+    }
+}
+
