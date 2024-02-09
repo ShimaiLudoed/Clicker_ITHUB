@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Res : MonoBehaviour
 {
-    public int wd;
+    public static int wd;
     public Text wdText;
     public void addwd()
     {
+        
         wd = PlayerPrefs.GetInt("WoodValue");
     }
     public int rk;
@@ -20,7 +21,7 @@ public class Res : MonoBehaviour
     }
     void FixedUpdate()
     {
-        wdText.text = Click.WoodValue.ToString();
+        wdText.text = wd.ToString();
         rkText.text = Click.RockValue.ToString();
     }
 }
