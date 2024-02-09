@@ -21,7 +21,7 @@ public class Res : MonoBehaviour
     }
     void FixedUpdate()
     {
-        wdText.text = wd.ToString();
+        wdText.text = Click.WoodValue.ToString();
         rkText.text = Click.RockValue.ToString();
     }
 }

@@ -7,8 +7,8 @@ public class Shop : MonoBehaviour
 {
     public string objectName;
     public int price;
-    public int access = 0;
-    public GameObject block;
+    public int access;
+    public GameObject Block;
     public Text objectPrice;
 
     void Awake()
@@ -19,11 +19,11 @@ public class Shop : MonoBehaviour
     {
         Click.WoodValue = PlayerPrefs.GetInt("WoodValue");
 
-        if (access == 0)
+        if (access == 1)
         {
             if (Click.WoodValue >= price)
             {
-                PlayerPrefs.SetInt(objectName + "Access", 1);
+                PlayerPrefs.SetInt(objectName + "Access", 2);
                 PlayerPrefs.SetInt("WoodValue", Click.WoodValue - price);
                 AccessUpdate();
             }
@@ -34,9 +34,9 @@ public class Shop : MonoBehaviour
         access = PlayerPrefs.GetInt(objectName + "Access");
         objectPrice.text=price.ToString();
 
-        if(access == 1 )
+        if(access == 2 )
         {
-            block.SetActive(false);
+            Block.SetActive(false);
             objectPrice.gameObject.SetActive(false);
         }
     }
